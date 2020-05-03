@@ -1,0 +1,14 @@
+{
+  "name": "porfolio-responsive",
+  "version": "1.0.0",
+  "description": "myPortfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "author": "Mathieu Enault",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
