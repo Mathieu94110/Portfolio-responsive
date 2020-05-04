@@ -7,7 +7,7 @@ body {
   height: 100%;
   margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  line-height: 1.7; }
   body#bg-img {
     background: url(./images/coding-academy.jpeg);
     background-attachment: fixed;
@@ -109,21 +109,43 @@ main {
     padding: 0;
     background: #373737;
     list-style: none;
+    font-size: 2rem;
     transform: translate3d(0, -100%, 0);
     transition: all 1.5s ease-out; }
     .menu-nav.show {
       transform: translate3d(0, 0, 0); }
+      .menu-nav.show :hover {
+        color: #eece1a;
+        font-size: 3rem; }
   .menu-branding {
     background: #444;
     transform: translate3d(0, 100%, 0);
     transition: all 1.5s ease-out; }
     .menu-branding.show {
       transform: translate3d(0, 0, 0); }
-    .menu-branding .portrait {
+    .menu-branding img {
       width: 250px;
       height: 250px;
-      background: url("./images/my-portrait.jpeg");
+      margin: auto;
       border-radius: 50%;
       border: solid 3px #eece1a; }
+
+@media all and (max-width: 768px) {
+  main#home {
+    position: absolute; }
+
+  h1.lg-heading {
+    font-size: 3.5rem; }
+
+  .icons i {
+    font-size: 3em; }
+
+  .menu-branding, .menu-nav {
+    font-size: 1rem; }
+    .menu-branding.show :hover, .menu-nav.show :hover {
+      font-size: 1.5rem; }
+    .menu-branding img, .menu-nav img {
+      width: 100px;
+      height: 100px; } }
 
 /*# sourceMappingURL=style.css.map */
