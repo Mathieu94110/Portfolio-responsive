@@ -48,4 +48,22 @@ function toggleMenu() {
 //        <textarea id="msg" class="text-area"></textarea>
 //      </div>
 //      <button class="btn">Envoyer</button>
+function validateForm() {
+  var name = window.document.getElementById("name").value;
+  var email = window.document.getElementByClassName("email").value;
+  var errorMessage = window.document.getElementById("error_message");
+  alert("name");
 
+  if (name.length < 5) {
+    text = "Merci d'indiqué un Nom valide !";
+    error_message.innerHTML = text;
+    return false;
+  }
+  if (email.indexOf("@") == -1 || email.length < 6) {
+    text = "L'adresse email semble incorrecte";
+    error_message.innerHTML = text;
+    return false;
+  }
+  alert("Formulaire envoyé avec succès");
+  return true;
+}
