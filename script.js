@@ -29,3 +29,23 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+// validate form
+//<div id="error-message"></div>
+//    <div class="items">
+//      <label for="name" class="label">Nom</label>
+//      <input id="name" type="text" class="input" />
+//    </div>
+//     <div class="items">
+//        <label for="email">Email</label>
+//        <input type="email" class="email" />
+//      </div>
+//      <div class="items">
+//       <label for="name" class="label">Sujet</label>
+//        <input id="name" type="text" class="input" />
+//       </div>
+//      <div class="items">
+//        <label for="name" class="label">Message</label>
+//        <textarea id="msg" class="text-area"></textarea>
+//      </div>
+//      <button class="btn">Envoyer</button>
+

@@ -7,6 +7,7 @@
       integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
       crossorigin="anonymous"
     />
+    <script src="./script.js"></script>
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -16,11 +17,12 @@
   <body>
     <div id="form-page">
       <div class="my-form">
-        <form method="post">
+        <form method="post" onsubmit="return validateForm()">
           <div class="contact-me">
             <div class="form-title">
               Contactez-<span id="color-form-title">moi</span>
             </div>
+            <div id="error-message"></div>
             <div class="items">
               <label for="name" class="label">Nom</label>
               <input id="name" type="text" class="input" />
@@ -37,10 +39,13 @@
               <label for="name" class="label">Message</label>
               <textarea id="msg" class="text-area"></textarea>
             </div>
-            <button class="btn">Envoyer</button>
+            <button class="btn">
+              Envoyer
+            </button>
           </div>
         </form>
       </div>
     </div>
+    
   </body>
 </html>

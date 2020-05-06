@@ -199,6 +199,13 @@ main {
     #form-page .my-form .contact-me {
       padding: 0 30px;
       height: 100%; }
+      #form-page .my-form .contact-me #error-message {
+        margin-bottom: 20px;
+        padding: 0px;
+        background: #fe8b8e;
+        text-align: center;
+        font-size: 14px;
+        transition: all 0.5s ease; }
       #form-page .my-form .contact-me .form-title {
         font-size: 2em;
         line-height: 1.25em;
