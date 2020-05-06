@@ -261,6 +261,75 @@ main {
   background: lighten($primary-color, 50);
   color: #333;
 }
+//Contact Form
+#form-page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  .my-form {
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background-color: rgba(15, 13, 13, 0.5);
+
+    .contact-me {
+      padding: 0 30px;
+      height: 100%;
+
+      .form-title {
+        font-size: 2em;
+        line-height: 1.25em;
+        text-transform: uppercase;
+        font-weight: 900;
+        letter-spacing: 2px;
+
+        text-align: center;
+        #color-form-title {
+          color: $secondary-color;
+        }
+      }
+
+      .items {
+        width: 100%;
+        padding-bottom: 15px;
+
+        label {
+          display: block;
+          font-size: 1em;
+          color: #fff;
+          padding-bottom: 5px;
+        }
+
+        .input,
+        .text-area,
+        .email {
+          background: transparent;
+          border: 0px 0px 1px 0px solid $secondary-color;
+          width: 100%;
+          padding: 8px 10px;
+          font-size: 1em;
+          border-radius: 3px;
+        }
+        #msg {
+          height: 100px;
+        }
+      }
+    }
+    button {
+      background: $secondary-color;
+      font-size: 1.25em;
+      padding: 10px 0;
+      text-transform: uppercase;
+      color: black;
+      font-weight: bold;
+      width: 100%;
+      cursor: pointer;
+      letter-spacing: 2px;
+    }
+  }
+}
 
 //Responsive
 @media all and (max-width: 766px) {
