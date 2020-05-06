@@ -199,7 +199,7 @@ main {
     #form-page .my-form .contact-me {
       padding: 0 30px;
       height: 100%; }
-      #form-page .my-form .contact-me #error-message {
+      #form-page .my-form .contact-me #error_message {
         margin-bottom: 20px;
         padding: 0px;
         background: #fe8b8e;
@@ -233,7 +233,8 @@ main {
           font-size: 1em;
           border-radius: 3px; }
         #form-page .my-form .contact-me .items #msg {
-          height: 100px; }
+          height: 100px;
+          resize: none; }
     #form-page .my-form button {
       background: #eece1a;
       font-size: 1.25em;

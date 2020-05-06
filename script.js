@@ -1,4 +1,5 @@
 //Select DOM Items
+
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
@@ -48,22 +49,25 @@ function toggleMenu() {
 //        <textarea id="msg" class="text-area"></textarea>
 //      </div>
 //      <button class="btn">Envoyer</button>
+
 function validateForm() {
   var name = window.document.getElementById("name").value;
-  var email = window.document.getElementByClassName("email").value;
-  var errorMessage = window.document.getElementById("error_message");
-  alert("name");
-
+  var email = window.document.getElementById("email").value;
+  var error_message = window.document.getElementById("error_message");
+  var text;
+  error_message.style.padding = "10px";
   if (name.length < 5) {
     text = "Merci d'indiqué un Nom valide !";
     error_message.innerHTML = text;
     return false;
   }
   if (email.indexOf("@") == -1 || email.length < 6) {
-    text = "L'adresse email semble incorrecte";
+    text = "L'adresse email est incorrecte";
+
     error_message.innerHTML = text;
     return false;
   }
   alert("Formulaire envoyé avec succès");
+  error_message.style.padding = "0px";
   return true;
 }
