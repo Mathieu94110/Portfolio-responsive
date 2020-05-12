@@ -130,6 +130,36 @@ main {
       border-radius: 50%;
       border: solid 3px #eece1a; }
 
+@media all and (max-width: 766px) {
+  main#home h1 {
+    margin-top: 10vh; }
+
+  main {
+    text-align: center;
+    align-items: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+
+  ul.menu-nav,
+  div.menu-branding {
+    width: 100%;
+    min-height: 0; }
+    ul.menu-nav.show,
+    div.menu-branding.show {
+      transform: translate3d(0, 0, 0); }
+
+  .menu-nav {
+    height: 75vh;
+    transform: translate3d(-100%, 0, 0);
+    font-size: 25px; }
+
+  .menu-branding {
+    height: 25vh;
+    transform: translate3d(100%, 0, 0); }
+    .menu-branding img {
+      width: 110px;
+      height: 110px; } }
 #presentation {
   height: 50vh; }
   #presentation .bio-container {
@@ -190,7 +220,7 @@ main {
   padding: 0;
   width: 100%;
   height: 100%;
-  display: grid; }
+  display: flex; }
   #form-page .my-form {
     margin: auto;
     width: 500px;
@@ -247,57 +277,15 @@ main {
       letter-spacing: 2px; }
 
 @media all and (max-width: 766px) {
-  main#home h1 {
-    margin-top: 10vh; }
-
-  main {
-    text-align: center;
-    align-items: center; }
-    main .lg-heading {
-      line-height: 1;
-      margin-bottom: 1rem; }
-
-  ul.menu-nav,
-  div.menu-branding {
-    width: 100%;
-    min-height: 0; }
-    ul.menu-nav.show,
-    div.menu-branding.show {
-      transform: translate3d(0, 0, 0); }
-
-  .menu-nav {
-    height: 75vh;
-    transform: translate3d(-100%, 0, 0);
-    font-size: 25px; }
-
-  .menu-branding {
-    height: 25vh;
-    transform: translate3d(100%, 0, 0); }
-    .menu-branding img {
-      width: 110px;
-      height: 110px; } }
-@media all and (max-width: 766px) {
   #form-page {
-    display: grid;
-    padding: 10px;
     width: 100%;
     min-height: 100vh;
     max-width: 1160px;
     margin: 0 auto;
-    grid-template-columns: 180px auto;
-    grid-template-rows: none;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
-    display: grid;
-    padding: 10px;
     width: 100%;
     min-height: 100vh;
     max-width: 1160px;
-    margin: 0 auto;
-    grid-template-columns: 180px auto;
-    grid-template-rows: none;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px; }
+    margin: 0 auto; }
     #form-page .my-form {
       margin: auto;
       width: 100%;
@@ -305,7 +293,8 @@ main {
       background-color: rgba(15, 13, 13, 0.5); }
       #form-page .my-form .contact-me {
         padding: 0 30px;
-        height: 100%; }
+        height: 100%;
+        width: 100%; }
         #form-page .my-form .contact-me #error_message {
           margin-bottom: 20px;
           padding: 0px;
